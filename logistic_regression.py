@@ -22,4 +22,4 @@ else:
 p=0
 return prob, p
 logistic_function(720, 10000)
-print("The p value is above 0.70 so we predict that we do obtain the loan")
+print("The probability value is above 0.70 so we predict that we do obtain the loan")
