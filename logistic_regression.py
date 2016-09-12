@@ -15,11 +15,11 @@ result = logit.fit()
 coeff = result.params
 print(coeff)
 def logistic_function(FicoScore, LoanAmount):
-prob = 1/(1 + math.exp(coeff[0] + coeff[2]*FicoScore+coeff[1]*LoanAmount))
-if prob > 0.7:
-p = 1
-else:
-p=0
-return prob, p
+    prob = 1/(1 + math.exp(coeff[0] + coeff[2]*FicoScore+coeff[1]*LoanAmount))
+    if prob > 0.7:
+        p = 1
+    else:
+        p=0
+    return prob, p
 logistic_function(720, 10000)
 print("The probability value is above 0.70 so we predict that we do obtain the loan")
